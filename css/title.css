@@ -1,12 +1,30 @@
 .title {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+  display: flex;
+}
+
+@media screen and (max-width: 600px) {
+  .title {
+    flex-direction: column;
+  }
+
+  .title .img img {
+    margin: 0 auto;
+    height: 300px;
+  }
+
+  .button {
+    align-items: center;
+  }
+
+  #arrow {
+    rotate: 260deg;
+    margin-right: 190px;
+  }
 }
 
 .text {
   font-family: var(--font-header);
   font-size: clamp(1rem, 2.5vw, 2.25rem);
-  grid-column: 1 / 2;
 }
 
 .title .text h1 {
@@ -22,9 +40,9 @@
 
 #krouzek {
   position: absolute;
-  width: 160%;
+  width: 125%;
   bottom: -40%;
-  right: -45%;
+  right: -13%;
   rotate: 4deg;
 }
 
@@ -36,11 +54,41 @@
 .title .img {
   display: flex;
   justify-content: flex-end;
-  grid-column: 2 / 2;
+  width: 100%;
 }
 
-.title img {
+.title .img img {
   width: 80%;
   padding-top: 3rem;
-  /* margin: 0 auto; */
+}
+
+@media screen and (max-width: 700px) {
+  .title .img img {
+    padding-top: 2rem;
+  }
+}
+
+.button {
+  display: flex;
+  flex-direction: column;
+  padding: 10px 0;
+  gap: clamp(5px, 1vw, 10px);
+}
+
+#arrow {
+  height: clamp(60px, 10vw, 120px);
+}
+
+#button {
+  display: block;
+  text-decoration: none;
+  color: var(--text-black);
+  background-color: var(--orange);
+  padding: 0.85rem 2rem;
+  border-radius: 6px;
+  width: fit-content;
+}
+
+#button:hover {
+  color: var(--white);
 }
