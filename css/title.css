@@ -1,0 +1,46 @@
+.title {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.text {
+  font-family: var(--font-header);
+  font-size: clamp(1rem, 2.5vw, 2.25rem);
+  grid-column: 1 / 2;
+}
+
+.title .text h1 {
+  font-weight: 900;
+  margin: 3rem 0 1rem;
+  text-transform: uppercase;
+  text-wrap: nowrap;
+}
+
+#krouzek-parent {
+  position: relative;
+}
+
+#krouzek {
+  position: absolute;
+  width: 160%;
+  bottom: -40%;
+  right: -45%;
+  rotate: 4deg;
+}
+
+.title .text h3 {
+  font-weight: 500;
+  margin: 0;
+}
+
+.title .img {
+  display: flex;
+  justify-content: flex-end;
+  grid-column: 2 / 2;
+}
+
+.title img {
+  width: 80%;
+  padding-top: 3rem;
+  /* margin: 0 auto; */
+}
