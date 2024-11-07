@@ -1,0 +1,43 @@
+header {
+  background-color: var(--white);
+  color: var(--text-black);
+  font-family: var(--font-header);
+  padding: 15px;
+}
+
+header > .wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header ul {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  gap: 20px;
+  font-size: 1.35em;
+}
+
+header ul li a {
+  color: var(--text-black);
+  text-decoration: none;
+}
+
+header ul li a:hover {
+  color: var(--orange);
+}
+
+.logo {
+  display: inline-block;
+  height: 50px;
+}
+
+.logo a {
+  display: inline-block;
+  height: inherit;
+}
+
+.logo img {
+  height: inherit;
+}

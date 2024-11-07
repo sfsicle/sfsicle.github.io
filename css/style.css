@@ -1,0 +1,21 @@
+:root {
+  --text-black: #121518;
+  --background-white: #f0f8ff;
+  --white: #fff;
+  --orange: #f28c1b;
+  --font-header: "Signika", sans-serif;
+  --font-text: "Inter", sans-serif;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  background-color: var(--background-white);
+}
+
+.wrapper {
+  width: 80%;
+  margin: 0 auto;
+  overflow: hidden;
+}
