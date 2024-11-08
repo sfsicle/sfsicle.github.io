@@ -2,40 +2,13 @@
   display: flex;
 }
 
-@media screen and (max-width: 600px) {
-  .title {
-    flex-direction: column;
-  }
-
-  .title .text h1 {
-    margin: 1rem 0;
-  }
-
-  .title .img {
-    padding: none;
-  }
-
-  .title .img img {
-    margin: 0 auto;
-    height: 300px;
-  }
-
-  .button {
-    align-items: center;
-  }
-
-  #arrow {
-    rotate: 260deg;
-  }
-}
-
 .title .text {
   font-family: var(--font-header);
   padding: 5%;
 }
 
 .title .text h1 {
-  font-size: clamp(1.5rem, 2.5vw, 3rem);
+  font-size: clamp(1.5rem, 4vw, 3.5rem);
   font-weight: 900;
   margin: 3rem 0 1rem;
   text-transform: uppercase;
@@ -55,7 +28,7 @@
 }
 
 .title .text h2 {
-  font-size: clamp(1.5rem, 2.5vw, 2rem);
+  font-size: clamp(1.5rem, 3vw, 2.5rem);
   font-weight: 500;
   margin: 0;
   opacity: 85%;
@@ -64,43 +37,72 @@
 .title .img {
   display: flex;
   justify-content: flex-end;
-  width: 100%;
-  padding: 5%;
 }
 
 .title .img img {
-  width: 80%;
-  padding-top: 3rem;
-}
-
-@media screen and (max-width: 700px) {
-  .title .img img {
-    padding-top: 2rem;
-  }
+  width: min(80%, 300px);
+  padding: 0 0 20px 0;
 }
 
 .button {
   display: flex;
   flex-direction: column;
   padding: 10px 0;
-  gap: clamp(5px, 1vw, 10px);
-}
-
-#arrow {
-  height: clamp(60px, 10vw, 120px);
 }
 
 #button {
-  display: block;
+  position: relative;
   text-decoration: none;
-  font-size: clamp(1rem, 2vw, 1.25rem);
+  font-size: clamp(1rem, 2vw, 2rem);
   color: var(--text-black);
   background-color: var(--orange);
-  padding: 0.85rem 2rem;
+  padding: 0.85rem 1.75rem;
+  margin-top: 60px;
   border-radius: 6px;
   width: fit-content;
 }
 
+#arrow {
+  pointer-events: none;
+  user-select: none;
+  width: calc(100% * 0.75);
+  position: absolute;
+  bottom: 19px;
+  right: -50px;
+}
+
 #button:hover {
   color: var(--white);
+}
+
+@media screen and (max-width: 649px) {
+  .title {
+    flex-direction: column;
+  }
+
+  .title .text h1 {
+    margin: 1rem 0;
+  }
+
+  .title .img img {
+    margin: 20px auto 0;
+    height: 300px;
+  }
+
+  #arrow {
+    bottom: 25px;
+  }
+}
+
+@media screen and (min-width: 650px) {
+  .title .img {
+    padding: 5%;
+    width: 100%;
+  }
+
+  .title .img img {
+    width: min(80%, 500px) !important;
+    min-width: 200px;
+    padding-top: 3rem;
+  }
 }

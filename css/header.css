@@ -4,6 +4,7 @@ header {
   font-family: var(--font-header);
   padding: 15px 0;
   height: clamp(40px, 10vw, 50px);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 header > .wrapper {
@@ -31,6 +32,7 @@ header ul {
 header ul li a {
   color: var(--text-black);
   text-decoration: none;
+  text-wrap: nowrap;
 }
 
 header ul li a:hover {
