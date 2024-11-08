@@ -12,9 +12,9 @@ footer .content {
   gap: 20px;
 }
 
-.content .logo img {
-  display: inline-block;
-  width: 120px;
+footer .content .logo {
+  height: 50px;
+  margin: auto 0 ;
 }
 
 footer .content table th {
