@@ -1,14 +1,18 @@
 .title {
   display: flex;
+  padding-block: 5%;
+}
+
+.title > * {
+  flex: 1;
 }
 
 .title .text {
   font-family: var(--font-header);
-  padding: 5%;
 }
 
 .title .text h1 {
-  font-size: clamp(1.5rem, 4vw, 3.5rem);
+  font-size: clamp(20px, 5vw, 48px);
   font-weight: 900;
   margin: 3rem 0 1rem;
   text-transform: uppercase;
@@ -28,7 +32,7 @@
 }
 
 .title .text h2 {
-  font-size: clamp(1.5rem, 3vw, 2.5rem);
+  font-size: clamp(16px, 5vw, 36px);
   font-weight: 500;
   margin: 0;
   opacity: 85%;
@@ -42,6 +46,7 @@
 .title .img img {
   width: min(80%, 300px);
   padding: 0 0 20px 0;
+  margin: 0 auto;
 }
 
 .button {
@@ -53,7 +58,7 @@
 #button {
   position: relative;
   text-decoration: none;
-  font-size: clamp(1rem, 2vw, 2rem);
+  font-size: clamp(14px, 2vw, 2rem);
   color: var(--text-black);
   background-color: var(--orange);
   padding: 0.85rem 1.75rem;
@@ -78,6 +83,7 @@
 @media screen and (max-width: 649px) {
   .title {
     flex-direction: column;
+    align-items: center;
   }
 
   .title .text h1 {
@@ -96,7 +102,6 @@
 
 @media screen and (min-width: 650px) {
   .title .img {
-    padding: 5%;
     width: 100%;
   }
 

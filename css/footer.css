@@ -2,7 +2,7 @@ footer {
   background-color: var(--white);
   color: var(--text-black);
   padding: 15px 0;
-  margin-top: 20px;
+  margin-top: 50px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
@@ -14,7 +14,7 @@ footer .content {
 
 footer .content .logo {
   height: 50px;
-  margin: auto 0 ;
+  margin: auto 0;
 }
 
 footer .content table th {
@@ -36,6 +36,15 @@ footer .content table td {
   vertical-align: top;
 }
 
+footer .content a:link,
+footer .content a:visited,
+footer .content a:active {
+  color: var(--orange);
+}
+
+footer .content a:hover {
+  color: var(--orange);
+}
 @media screen and (max-width: 649px) {
   footer .content {
     flex-direction: column;
