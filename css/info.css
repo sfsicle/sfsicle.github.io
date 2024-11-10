@@ -14,7 +14,6 @@
 .info p {
   font-family: var(--font-text);
   font-size: clamp(1rem, 2vw, 2rem);
-  text-indent: 1.25ch;
   line-height: 140%;
   margin: 0;
   text-align: justify;

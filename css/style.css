@@ -1,3 +1,5 @@
+@import url("/css/fonts.css");
+
 :root {
   --text-black: #121518;
   --background-white: #f0f8ff;
@@ -6,8 +8,6 @@
   --font-header: "Signika", sans-serif;
   --font-text: "Inter", sans-serif;
 }
-
-
 
 html,
 body {
@@ -18,6 +18,12 @@ body {
 }
 
 .wrapper {
-  width: 85%;
+  width: 80%;
   margin: 0 auto;
+}
+
+@media screen and (max-width: 649px) {
+  .wrapper {
+    width: 90%;
+  }
 }
