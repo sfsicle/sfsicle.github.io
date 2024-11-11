@@ -1,39 +1,25 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<svg id="Vrstva_2" data-name="Vrstva 2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 371.68 378.24">
-  <defs>
-    <style>
-      .cls-1 {
-        fill: none;
-      }
-
-      .cls-2 {
-        fill: rgba(13, 186, 181, .15);
-        isolation: isolate;
-        opacity: .44;
-      }
-
-      .cls-3 {
-        fill: #f0f8ff;
-      }
-
-      .cls-4 {
-        clip-path: url(#clippath);
-      }
-    </style>
-    <clipPath id="clippath">
-      <rect class="cls-1" x="28.84" y="36.62" width="314" height="305" transform="translate(-42.49 323.91) rotate(-76.06)"/>
-    </clipPath>
-  </defs>
-  <g id="Vrstva_1-2" data-name="Vrstva 1">
-    <g class="cls-4">
-      <g>
-        <path class="cls-2" d="M169.5,39.64h-.04c-74.99,18.22-121.07,93.82-102.93,168.89v.04c18.15,75.06,93.64,121.15,168.63,102.95h.04c74.99-18.21,121.07-93.82,102.93-168.89v-.04c-18.15-75.06-93.64-121.15-168.63-102.95Z"/>
-        <path class="cls-2" d="M186.55,63.85h-.04C109.95,54.36,40.17,108.81,30.65,185.46v.04c-9.53,76.65,44.82,146.49,121.38,155.97h.04c76.56,9.49,146.35-44.96,155.87-121.61v-.04c9.53-76.65-44.82-146.48-121.38-155.97Z"/>
-        <g>
-          <path class="cls-3" d="M260.23,153.34l-64.79,92.43-12.23-3.04,64.68-92.46,12.35,3.07Z"/>
-          <path class="cls-3" d="M125.1,169.91l74.85-17.69-3.13,12.63-58.52,13.24,45.55,39-3.15,12.7-57.86-50.72,2.27-9.15Z"/>
-        </g>
-      </g>
-    </g>
-  </g>
+<svg width="373" height="380" viewBox="0 0 373 380" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0_295_38)">
+<path opacity="0.44" d="M170.163 40.514L170.125 40.5232C95.1378 58.7293 49.054 134.338 67.1943 209.4L67.2034 209.438C85.3438 284.5 160.839 330.591 235.826 312.384L235.864 312.375C310.852 294.169 356.936 218.56 338.795 143.499L338.786 143.461C320.646 68.3987 245.151 22.3079 170.163 40.514Z" fill="#0DBAB5" fill-opacity="0.25"/>
+<path opacity="0.44" d="M187.216 64.7299L187.178 64.7251C110.617 55.2367 40.8321 109.685 31.3085 186.338L31.3037 186.377C21.7801 263.03 76.1243 332.862 152.685 342.35L152.723 342.355C229.284 351.843 299.069 297.395 308.593 220.742L308.597 220.703C318.121 144.05 263.777 74.2182 187.216 64.7299Z" fill="#0DBAB5" fill-opacity="0.25"/>
+<g filter="url(#filter0_d_295_38)">
+<path d="M260.894 154.214L196.104 246.641L183.872 243.604L248.549 151.149L260.894 154.214Z" fill="#F0F8FF"/>
+<path d="M125.761 170.786L200.613 153.092L197.479 165.718L138.962 178.959L184.508 217.958L181.355 230.659L123.49 179.934L125.761 170.786Z" fill="#F0F8FF"/>
+</g>
+</g>
+<defs>
+<filter id="filter0_d_295_38" x="123.49" y="151.149" width="141.404" height="99.4912" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+<feOffset dx="2" dy="2"/>
+<feGaussianBlur stdDeviation="1"/>
+<feComposite in2="hardAlpha" operator="out"/>
+<feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0.365234 0 0 0 0 0.353376 0 0 0 0.1 0"/>
+<feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_295_38"/>
+<feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_295_38" result="shape"/>
+</filter>
+<clipPath id="clip0_295_38">
+<rect width="305" height="314" fill="white" transform="translate(76.3252 0.878906) rotate(13.9435)"/>
+</clipPath>
+</defs>
 </svg>

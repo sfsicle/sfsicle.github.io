@@ -15,6 +15,15 @@ body {
   padding: 0;
   box-sizing: border-box;
   background-color: var(--background-white);
+  max-width: 2048px;
+  margin-inline: auto;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  justify-content: space-between;
 }
 
 .wrapper {
