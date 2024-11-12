@@ -24,6 +24,7 @@ footer .content table th {
   text-align: left;
   word-break: keep-all;
   text-wrap: nowrap;
+  white-space: nowrap;
 }
 
 footer .content table th:first-of-type {
