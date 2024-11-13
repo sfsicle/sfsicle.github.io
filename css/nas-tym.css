@@ -2,10 +2,17 @@
   margin: 0;
 }
 
+.personal {
+  display: flex;
+  gap: 30px;
+  margin-block: 50px 0px;
+}
+
 h1,
 h2,
 h3 {
   font-family: var(--font-header);
+  color: var(--text-black);
 }
 
 h1 {
@@ -15,41 +22,50 @@ h1 {
 }
 
 h2 {
-  font-size: 2.25em;
-  margin-block: 2em 0.25em;
+  font-size: 2.25rem;
+  margin-block: 0 0.25em;
 }
 
-h3 {
-  margin-block: 0em 1em;
-  color: var(--text-black);
+h3:not(div > h3) {
+  margin-block: 0em 0.5em;
+}
+
+.photo {
+  aspect-ratio: 1/1;
+  height: auto;
+  background-image: url("/public/splash.svg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 p {
-  padding-left: 2rem;
   font-family: var(--font-text);
-  font-size: 1em;
+  color: var(--text-black);
   line-height: 1.5;
   text-align: justify;
-  margin-block: 0em 1em;
 }
 
-.member .text {
+.member {
   display: flex;
   flex-direction: column;
+  gap: 30px;
 }
 
-.member .text ul {
+.member ul {
   list-style: none;
   padding: 0;
 }
 
-.member .text ul > li:not(:first-of-type) {
+.member ul > li:not(:first-of-type) {
   position: relative;
   padding-inline: 1em;
   margin-bottom: 0.5em;
+  padding-left: 2rem;
+  font-family: var(--font-text);
 }
 
-.member .text ul > li:not(:first-of-type)::before {
+.member ul > li:not(:first-of-type)::before {
   content: url("/public/bullet-arrow.svg");
   position: absolute;
   width: 1em;
@@ -57,8 +73,20 @@ p {
   top: 0;
 }
 
-.member .text ul > li:first-of-type {
+.member ul > li:first-of-type {
   padding-inline: 0;
+}
+
+.lists {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 30px;
+}
+
+@media screen and (max-width: 1024px) {
+  .lists {
+    grid-template-columns: 1fr;
+  }
 }
 
 @media screen and (max-width: 649px) {
@@ -68,10 +96,15 @@ p {
 
   h2 {
     font-size: 1.5em;
+    margin-block: 1em 0.25em;
   }
 
   p {
-    font-size: 1em;
-    padding-left: 1rem;
+    font-size: 14px;
+    /* padding-inline: 2rem; */
+  }
+
+  li {
+    font-size: 14px;
   }
 }
