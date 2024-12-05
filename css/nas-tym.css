@@ -8,7 +8,11 @@
   margin-block: 50px 0px;
 }
 
-
+.photo img {
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
+}
 
 h1,
 h2,
@@ -34,7 +38,6 @@ h3:not(div > h3) {
 
 .photo {
   aspect-ratio: 1/1;
-  object-fit: cover;
   height: auto;
   background-image: url("/public/splash.svg");
   background-size: cover;
@@ -95,6 +98,12 @@ p {
 @media screen and (max-width: 649px) {
   h1 {
     font-size: 1.75em;
+  }
+
+  .personal {
+    flex-direction: column; 
+    align-items: center;
+    text-align: center;
   }
 
   h2 {
