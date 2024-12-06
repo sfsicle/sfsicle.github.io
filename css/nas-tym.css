@@ -30,7 +30,6 @@ h3 {
 h1 {
   font-size: 3rem;
   margin-top: 1.5em;
-  margin-block: 2em 0.25em;
 }
 
 h2 {
@@ -123,8 +122,14 @@ p {
   }
 
   .photo img {
-    max-width: 80%;
+    max-width: 65%;
     height: auto;
+  }
+
+  .lists {
+    width: 80%;
+    margin: auto;
+    gap: 15px;
   }
 
   h2 {
