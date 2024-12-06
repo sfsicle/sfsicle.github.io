@@ -8,14 +8,16 @@
   margin-block: 50px 0px;
 }
 
-.photo {
-  width: 40%;
+.photo img {
+  width: 300px;
 }
 
-.photo img {
-  width: 80%;
-  height: auto;
+.text {
+  width: 65%;
+}
 
+.photo {
+  width: 35%;
 }
 
 h1,
