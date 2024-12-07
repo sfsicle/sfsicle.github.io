@@ -4,7 +4,7 @@
 
 .personal {
   display: flex;
-  gap: 30px;
+  gap: 40px;
   margin-block: 50px 0px;
 }
 
@@ -16,10 +16,12 @@
   width: 35%;
   display: flex;
   align-items: center;
+  flex-wrap: wrap;
 }
 
 .photo img {
   width: 300px;
+  overflow: hidden;
 }
 
 h1,
@@ -39,7 +41,7 @@ h2 {
   margin-block: 0 0.25em;
 }
 
-.texts h3 {
+.text h3 {
   margin-block: 0 0.25em;
 }
 
@@ -113,7 +115,6 @@ p {
   .personal {
     flex-direction: column; 
     align-items: center;
-    text-align: center;
   }
 
   .text {
