@@ -34,15 +34,16 @@ h3 {
 h1 {
   font-size: 3rem;
   margin-top: 1.5em;
+  margin-bottom: 0.3em;
 }
 
 h2 {
   font-size: 2.25rem;
-  margin-block: 0 0.25em;
+  margin-block: 0 0.3em;
 }
 
 .text h3 {
-  margin-block: 0 0.25em;
+  margin-block: 0 0.3em;
 }
 
 h3:not(div > h3) {
@@ -51,7 +52,7 @@ h3:not(div > h3) {
 
 .photo {
   height: auto;
-  background-image: url("/public/splash.svg");
+  background-image: url("/assets/bullet-arrow.svg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -84,11 +85,11 @@ p {
 }
 
 .member ul > li:not(:first-of-type)::before {
-  content: url("/public/bullet-arrow.svg");
+  content: url("/assets/bullet-arrow.svg");
   position: absolute;
   width: 1em;
-  left: 0;
-  top: 0;
+  left: 5px;
+  top: -1;
 }
 
 .member ul > li:first-of-type {
