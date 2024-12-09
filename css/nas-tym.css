@@ -50,14 +50,6 @@ h3:not(div > h3) {
   margin-block: 0em 0.5em;
 }
 
-.photo {
-  height: auto;
-  background-image: url("/assets/bullet-arrow.svg");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-}
-
 p {
   font-family: var(--font-text);
   color: var(--text-black);
